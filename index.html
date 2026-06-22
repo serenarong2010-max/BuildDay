@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roblox Build Day - Learn to Build Together</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">🏗️ Build Day</div>
+            <ul class="nav-menu">
+                <li><a href="#about">About</a></li>
+                <li><a href="#learn">What You'll Learn</a></li>
+                <li><a href="#schedule">Schedule</a></li>
+                <li><a href="#why">Why Join</a></li>
+                <li><a href="#signup" class="nav-cta">Sign Up</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-bg-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Build Day</h1>
+                <p class="hero-subtitle">Learn. Build. Play. Together.</p>
+                <p class="hero-description">Join thousands of Roblox players in a collaborative hackathon where you'll learn to create your own games, make new friends, and discover the magic behind your favorite experiences.</p>
+                <div class="hero-cta">
+                    <a href="#signup" class="btn btn-primary">Sign Up Now</a>
+                    <a href="#about" class="btn btn-secondary">Learn More</a>
+                </div>
+                <div class="countdown" id="countdown">
+                    <div class="countdown-item">
+                        <span class="countdown-number" id="days">00</span>
+                        <span class="countdown-label">Days</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span class="countdown-number" id="hours">00</span>
+                        <span class="countdown-label">Hours</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span class="countdown-number" id="minutes">00</span>
+                        <span class="countdown-label">Minutes</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span class="countdown-number" id="seconds">00</span>
+                        <span class="countdown-label">Seconds</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2 class="section-title">What is Build Day?</h2>
+            <p class="section-subtitle">A community event where players become creators</p>
+            <div class="about-grid">
+                <div class="about-card fade-in">
+                    <div class="card-icon">🎮</div>
+                    <h3>Learn Roblox Studio</h3>
+                    <p>Discover how your favorite games are made. Learn the tools and techniques that pros use to create amazing experiences.</p>
+                </div>
+                <div class="about-card fade-in">
+                    <div class="card-icon">👥</div>
+                    <h3>Build Together</h3>
+                    <p>This isn't about competition—it's about learning as a community. Work alongside other players, share ideas, and grow together.</p>
+                </div>
+                <div class="about-card fade-in">
+                    <div class="card-icon">🏆</div>
+                    <h3>Earn Rewards</h3>
+                    <p>Walk away with new skills, new friends, and a chance to win Robux for your amazing creations!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What You'll Learn Section -->
+    <section id="learn" class="learn-section">
+        <div class="container">
+            <h2 class="section-title">What You'll Create</h2>
+            <p class="section-subtitle">Start simple, dream big</p>
+            <div class="learn-grid">
+                <div class="learn-card fade-in">
+                    <div class="learn-icon">🏃</div>
+                    <h3>Obby Courses</h3>
+                    <p>Create exciting obstacle courses that challenge players with jumps, traps, and creative puzzles.</p>
+                    <ul class="learn-list">
+                        <li>Design unique challenges</li>
+                        <li>Add fun obstacles</li>
+                        <li>Test with friends</li>
+                    </ul>
+                </div>
+                <div class="learn-card fade-in">
+                    <div class="learn-icon">🧩</div>
+                    <h3>Puzzle Games</h3>
+                    <p>Build brain-teasing experiences that make players think and explore.</p>
+                    <ul class="learn-list">
+                        <li>Create interactive puzzles</li>
+                        <li>Design clever mechanics</li>
+                        <li>Build immersive worlds</li>
+                    </ul>
+                </div>
+                <div class="learn-card fade-in">
+                    <div class="learn-icon">🎨</div>
+                    <h3>Behind the Scenes</h3>
+                    <p>Learn how games really work—from coding to level design to player experience.</p>
+                    <ul class="learn-list">
+                        <li>Basic scripting</li>
+                        <li>Level design principles</li>
+                        <li>Game mechanics</li>
+                    </ul>
+                </div>
+                <div class="learn-card fade-in">
+                    <div class="learn-icon">💡</div>
+                    <h3>Real Skills</h3>
+                    <p>Gain experience that goes beyond Roblox—problem-solving, creativity, and teamwork.</p>
+                    <ul class="learn-list">
+                        <li>Critical thinking</li>
+                        <li>Creative problem-solving</li>
+                        <li>Collaboration</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Schedule Section -->
+    <section id="schedule" class="schedule-section">
+        <div class="container">
+            <h2 class="section-title">Event Schedule</h2>
+            <p class="section-subtitle">Your journey from player to creator</p>
+            <div class="timeline">
+                <div class="timeline-item fade-in">
+                    <div class="timeline-marker">1</div>
+                    <div class="timeline-content">
+                        <h3>Getting Started</h3>
+                        <div class="timeline-time">9:00 AM - 10:00 AM</div>
+                        <p>Introduction to Roblox Studio, setting up your workspace, and understanding the interface.</p>
+                        <span class="timeline-tag">Beginner Friendly</span>
+                    </div>
+                </div>
+                <div class="timeline-item fade-in">
+                    <div class="timeline-marker">2</div>
+                    <div class="timeline-content">
+                        <h3>Building Basics</h3>
+                        <div class="timeline-time">10:00 AM - 12:00 PM</div>
+                        <p>Learn fundamental building tools, terrain editing, and placing objects in your world.</p>
+                        <span class="timeline-tag">Hands-On</span>
+                    </div>
+                </div>
+                <div class="timeline-item fade-in">
+                    <div class="timeline-marker">3</div>
+                    <div class="timeline-content">
+                        <h3>Lunch & Community Time</h3>
+                        <div class="timeline-time">12:00 PM - 1:00 PM</div>
+                        <p>Take a break, meet other builders, share ideas, and get inspired by what others are creating.</p>
+                        <span class="timeline-tag">Networking</span>
+                    </div>
+                </div>
+                <div class="timeline-item fade-in">
+                    <div class="timeline-marker">4</div>
+                    <div class="timeline-content">
+                        <h3>Scripting Introduction</h3>
+                        <div class="timeline-time">1:00 PM - 3:00 PM</div>
+                        <p>Make your creations come alive with basic scripting—adding movement, interactions, and game logic.</p>
+                        <span class="timeline-tag">Interactive</span>
+                    </div>
+                </div>
+                <div class="timeline-item fade-in">
+                    <div class="timeline-marker">5</div>
+                    <div class="timeline-content">
+                        <h3>Build Challenge</h3>
+                        <div class="timeline-time">3:00 PM - 5:00 PM</div>
+                        <p>Apply what you've learned! Create your own obby or puzzle with guidance from experienced mentors.</p>
+                        <span class="timeline-tag">Creative</span>
+                    </div>
+                </div>
+                <div class="timeline-item fade-in">
+                    <div class="timeline-marker">6</div>
+                    <div class="timeline-content">
+                        <h3>Showcase & Celebration</h3>
+                        <div class="timeline-time">5:00 PM - 6:00 PM</div>
+                        <p>Share your creation with the community, celebrate everyone's hard work, and announce special rewards!</p>
+                        <span class="timeline-tag">Fun</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Participate Section -->
+    <section id="why" class="why-section">
+        <div class="container">
+            <h2 class="section-title">Why Join Build Day?</h2>
+            <p class="section-subtitle">Because every player has a creator inside them</p>
+            <div class="why-grid">
+                <div class="why-card fade-in">
+                    <div class="why-icon">🌟</div>
+                    <h3>Discover Your Potential</h3>
+                    <p>You already know what makes a great game—now learn to create one! Your player experience is your superpower.</p>
+                </div>
+                <div class="why-card fade-in">
+                    <div class="why-icon">🤝</div>
+                    <h3>Meet Like-Minded Creators</h3>
+                    <p>Connect with other players who want to learn. Build friendships while building games.</p>
+                </div>
+                <div class="why-card fade-in">
+                    <div class="why-icon">🎯</div>
+                    <h3>Learn at Your Own Pace</h3>
+                    <p>No experience needed! Whether you're a complete beginner or have dabbled in building, there's something for you.</p>
+                </div>
+                <div class="why-card fade-in">
+                    <div class="why-icon">🎁</div>
+                    <h3>Win Amazing Prizes</h3>
+                    <p>Top creations earn Robux, but everyone walks away with valuable skills and unforgettable experiences.</p>
+                </div>
+                <div class="why-card fade-in">
+                    <div class="why-icon">📚</div>
+                    <h3>See How Games Work</h3>
+                    <p>Ever wonder how your favorite obby was made? Learn the secrets behind the scenes and appreciate games in a whole new way.</p>
+                </div>
+                <div class="why-card fade-in">
+                    <div class="why-icon">🚀</div>
+                    <h3>Start Your Creator Journey</h3>
+                    <p>Build Day is just the beginning. Many participants go on to create popular experiences and build amazing communities.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sign Up Section -->
+    <section id="signup" class="signup-section">
+        <div class="container">
+            <h2 class="section-title">Ready to Build?</h2>
+            <p class="section-subtitle">Join Build Day and start your creator journey</p>
+            <div class="signup-form-container fade-in">
+                <form id="signupForm" class="signup-form">
+                    <div class="form-group">
+                        <label for="username">Roblox Username *</label>
+                        <input type="text" id="username" name="username" required placeholder="Enter your Roblox username">
+                        <span class="error-message" id="username-error"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+                        <span class="error-message" id="email-error"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="age">Age Group *</label>
+                        <select id="age" name="age" required>
+                            <option value="">Select your age group</option>
+                            <option value="under13">Under 13</option>
+                            <option value="13-17">13-17</option>
+                            <option value="18+">18+</option>
+                        </select>
+                        <span class="error-message" id="age-error"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="experience">Building Experience *</label>
+                        <select id="experience" name="experience" required>
+                            <option value="">Select your experience level</option>
+                            <option value="none">Never built before</option>
+                            <option value="beginner">Tried it a few times</option>
+                            <option value="intermediate">Built some simple games</option>
+                            <option value="advanced">Experienced builder</option>
+                        </select>
+                        <span class="error-message" id="experience-error"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="motivation">What excites you most about Build Day?</label>
+                        <textarea id="motivation" name="motivation" rows="4" placeholder="Tell us what you're most looking forward to..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-large">Sign Up for Build Day</button>
+                    <p class="form-note">🎉 No prior building experience required. Everyone is welcome!</p>
+                </form>
+                <div id="successMessage" class="success-message" style="display: none;">
+                    <div class="success-icon">🎊</div>
+                    <h3>You're In!</h3>
+                    <p>Welcome to Build Day! Check your email for next steps and get ready to start building.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Build Day</h4>
+                    <p>A community event bringing Roblox players together to learn, build, and create.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#learn">What You'll Learn</a></li>
+                        <li><a href="#schedule">Schedule</a></li>
+                        <li><a href="#signup">Sign Up</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#">Roblox Studio Guide</a></li>
+                        <li><a href="#">Beginner Tutorials</a></li>
+                        <li><a href="#">Community Discord</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Roblox Build Day. Built with ❤️ for the community.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
