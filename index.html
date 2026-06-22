@@ -16,6 +16,7 @@
                 <li><a href="#learn">What You'll Learn</a></li>
                 <li><a href="#schedule">Schedule</a></li>
                 <li><a href="#why">Why Join</a></li>
+                <li><a href="schools.html">For Schools</a></li>
                 <li><a href="#signup" class="nav-cta">Sign Up</a></li>
             </ul>
             <div class="hamburger">
@@ -32,6 +33,13 @@
             <div class="shape shape-1"></div>
             <div class="shape shape-2"></div>
             <div class="shape shape-3"></div>
+            <div class="shape shape-4"></div>
+            <div class="shape shape-5"></div>
+        </div>
+        <div class="hero-images">
+            <img src="https://images.unsplash.com/photo-1612287230202-1ff8d50ca2c7?w=200&h=200&fit=crop" alt="Roblox Game" class="floating-img img-1">
+            <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?w=200&h=200&fit=crop" alt="Gaming" class="floating-img img-2">
+            <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=200&h=200&fit=crop" alt="Building" class="floating-img img-3">
         </div>
         <div class="container">
             <div class="hero-content">
@@ -69,6 +77,22 @@
         <div class="container">
             <h2 class="section-title">What is Build Day?</h2>
             <p class="section-subtitle">A community event where players become creators</p>
+            
+            <div class="image-showcase">
+                <div class="showcase-item fade-in">
+                    <img src="https://images.unsplash.com/photo-1593305841991-05c29736cec7?w=400&h=300&fit=crop" alt="Game Development">
+                    <div class="showcase-caption">Create Your Own Worlds</div>
+                </div>
+                <div class="showcase-item fade-in">
+                    <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?w=400&h=300&fit=crop" alt="Gaming Community">
+                    <div class="showcase-caption">Build Together, Play Together</div>
+                </div>
+                <div class="showcase-item fade-in">
+                    <img src="https://images.unsplash.com/photo-1612287230202-1ff8d50ca2c7?w=400&h=300&fit=crop" alt="Roblox Studio">
+                    <div class="showcase-caption">Learn Professional Tools</div>
+                </div>
+            </div>
+            
             <div class="about-grid">
                 <div class="about-card fade-in">
                     <div class="card-icon">🎮</div>
@@ -152,6 +176,17 @@
                         <div class="timeline-time">9:00 AM - 10:00 AM</div>
                         <p>Introduction to Roblox Studio, setting up your workspace, and understanding the interface.</p>
                         <span class="timeline-tag">Beginner Friendly</span>
+                        <button class="more-btn" onclick="toggleDetails(this)">Learn More <span class="arrow">▼</span></button>
+                        <div class="event-details">
+                            <h4>What You'll Do:</h4>
+                            <ul>
+                                <li>Download and install Roblox Studio on your computer</li>
+                                <li>Create your first project and navigate the interface</li>
+                                <li>Learn about the Explorer, Properties, and Output windows</li>
+                                <li>Understand the difference between Play, Build, and Test modes</li>
+                            </ul>
+                            <p><strong>What to bring:</strong> A computer with Roblox Studio installed (free download) and a Roblox account.</p>
+                        </div>
                     </div>
                 </div>
                 <div class="timeline-item fade-in">
@@ -161,6 +196,18 @@
                         <div class="timeline-time">10:00 AM - 12:00 PM</div>
                         <p>Learn fundamental building tools, terrain editing, and placing objects in your world.</p>
                         <span class="timeline-tag">Hands-On</span>
+                        <button class="more-btn" onclick="toggleDetails(this)">Learn More <span class="arrow">▼</span></button>
+                        <div class="event-details">
+                            <h4>What You'll Create:</h4>
+                            <ul>
+                                <li>Build your first obstacle course section using basic parts</li>
+                                <li>Learn to scale, rotate, and position objects precisely</li>
+                                <li>Use the Terrain Editor to create hills, valleys, and water</li>
+                                <li>Add colors and materials to make your world visually appealing</li>
+                                <li>Test your creation in real-time as you build</li>
+                            </ul>
+                            <p><strong>Pro tip:</strong> Don't worry about making it perfect - experimentation is the best way to learn!</p>
+                        </div>
                     </div>
                 </div>
                 <div class="timeline-item fade-in">
@@ -170,6 +217,18 @@
                         <div class="timeline-time">12:00 PM - 1:00 PM</div>
                         <p>Take a break, meet other builders, share ideas, and get inspired by what others are creating.</p>
                         <span class="timeline-tag">Networking</span>
+                        <button class="more-btn" onclick="toggleDetails(this)">Learn More <span class="arrow">▼</span></button>
+                        <div class="event-details">
+                            <h4>Community Activities:</h4>
+                            <ul>
+                                <li>Join themed Discord channels to chat with other participants</li>
+                                <li>Share screenshots of your work-in-progress for feedback</li>
+                                <li>Attend optional mini-workshops on specific topics</li>
+                                <li>Find potential teammates for the afternoon build challenge</li>
+                                <li>Participate in fun icebreaker games and trivia about Roblox</li>
+                            </ul>
+                            <p><strong>Remember:</strong> This is a collaborative event - helping others learn is encouraged!</p>
+                        </div>
                     </div>
                 </div>
                 <div class="timeline-item fade-in">
@@ -179,6 +238,18 @@
                         <div class="timeline-time">1:00 PM - 3:00 PM</div>
                         <p>Make your creations come alive with basic scripting—adding movement, interactions, and game logic.</p>
                         <span class="timeline-tag">Interactive</span>
+                        <button class="more-btn" onclick="toggleDetails(this)">Learn More <span class="arrow">▼</span></button>
+                        <div class="event-details">
+                            <h4>Scripting Fundamentals:</h4>
+                            <ul>
+                                <li>Write your first Lua script to create interactive elements</li>
+                                <li>Learn about events: touch, click, and proximity triggers</li>
+                                <li>Create moving platforms, kill bricks, and checkpoints</li>
+                                <li>Understand variables, functions, and conditional statements</li>
+                                <li>Debug common errors using the Output window</li>
+                            </ul>
+                            <p><strong>No coding experience needed:</strong> We'll start from scratch and provide templates you can customize!</p>
+                        </div>
                     </div>
                 </div>
                 <div class="timeline-item fade-in">
@@ -188,6 +259,22 @@
                         <div class="timeline-time">3:00 PM - 5:00 PM</div>
                         <p>Apply what you've learned! Create your own obby or puzzle with guidance from experienced mentors.</p>
                         <span class="timeline-tag">Creative</span>
+                        <button class="more-btn" onclick="toggleDetails(this)">Learn More <span class="arrow">▼</span></button>
+                        <div class="event-details">
+                            <h4>Challenge Options:</h4>
+                            <ul>
+                                <li><strong>Obby Challenge:</strong> Create a 10-stage obstacle course with increasing difficulty</li>
+                                <li><strong>Puzzle Challenge:</strong> Build a room with 5 interconnected puzzles</li>
+                                <li><strong>Free Build:</strong> Create whatever inspires you - no restrictions!</li>
+                            </ul>
+                            <h4>Support Available:</h4>
+                            <ul>
+                                <li>Experienced mentors roaming to answer questions</li>
+                                <li>Quick-reference guides for common tasks</li>
+                                <li>Pre-made asset libraries to speed up your workflow</li>
+                                <li>Collaboration encouraged - work solo or team up!</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
                 <div class="timeline-item fade-in">
@@ -197,6 +284,19 @@
                         <div class="timeline-time">5:00 PM - 6:00 PM</div>
                         <p>Share your creation with the community, celebrate everyone's hard work, and announce special rewards!</p>
                         <span class="timeline-tag">Fun</span>
+                        <button class="more-btn" onclick="toggleDetails(this)">Learn More <span class="arrow">▼</span></button>
+                        <div class="event-details">
+                            <h4>Event Highlights:</h4>
+                            <ul>
+                                <li>Voluntary showcase - share your creation with everyone (not required!)</li>
+                                <li>Play and experience games created by other participants</li>
+                                <li>Leave positive feedback and kudos for your favorites</li>
+                                <li>Special recognition categories: Most Creative, Best Teamwork, Biggest Improvement</li>
+                                <li>Robux prizes for top creations (but everyone is a winner!)</li>
+                                <li>Group photo and celebration of an amazing day of learning</li>
+                            </ul>
+                            <p><strong>The real prize:</strong> New skills, new friends, and the knowledge that you CAN build games!</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -311,6 +411,7 @@
                         <li><a href="#about">About</a></li>
                         <li><a href="#learn">What You'll Learn</a></li>
                         <li><a href="#schedule">Schedule</a></li>
+                        <li><a href="schools.html">For Schools</a></li>
                         <li><a href="#signup">Sign Up</a></li>
                     </ul>
                 </div>

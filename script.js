@@ -281,3 +281,20 @@ formInputs.forEach(input => {
 // Console message for developers
 console.log('%c🏗️ Roblox Build Day', 'font-size: 24px; font-weight: bold; color: #FF4444;');
 console.log('%cWelcome, future builder! See you at Build Day!', 'font-size: 14px; color: #00A2FF;');
+
+// Toggle Event Details
+function toggleDetails(button) {
+    const eventDetails = button.nextElementSibling;
+    const arrow = button.querySelector('.arrow');
+    
+    // Toggle expanded class
+    eventDetails.classList.toggle('expanded');
+    arrow.classList.toggle('rotated');
+    
+    // Update button text
+    if (eventDetails.classList.contains('expanded')) {
+        button.innerHTML = 'Show Less <span class="arrow rotated">▼</span>';
+    } else {
+        button.innerHTML = 'Learn More <span class="arrow">▼</span>';
+    }
+}
