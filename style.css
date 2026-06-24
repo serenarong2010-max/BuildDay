@@ -87,6 +87,20 @@ body {
     transform: scale(1.05);
 }
 
+.nav-school-cta {
+    color: var(--secondary-yellow) !important;
+    border: 1px solid rgba(255, 185, 0, 0.6);
+    padding: 0.5rem 1rem;
+    border-radius: 25px;
+    transition: all 0.3s;
+}
+
+.nav-school-cta:hover {
+    background: rgba(255, 185, 0, 0.12);
+    color: var(--text-light) !important;
+    transform: scale(1.03);
+}
+
 .hamburger {
     display: none;
     flex-direction: column;
@@ -864,14 +878,14 @@ body {
 
 /* Fade In Animation */
 .fade-in {
-    opacity: 0;
-    transform: translateY(30px);
-    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    opacity: 1;
+    transform: none;
+    transition: none;
 }
 
 .fade-in.visible {
     opacity: 1;
-    transform: translateY(0);
+    transform: none;
 }
 
 /* Responsive Design */
@@ -1007,6 +1021,73 @@ body {
     background: linear-gradient(135deg, #111111 0%, #1a1a2e 100%);
 }
 
+.hero-schools .hero-content {
+    max-width: 1050px;
+}
+
+.school-highlights {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.school-highlight {
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 18px;
+    padding: 1rem 1.1rem;
+    text-align: left;
+    backdrop-filter: blur(10px);
+}
+
+.highlight-label {
+    display: inline-block;
+    font-size: 0.82rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--secondary-yellow);
+    margin-bottom: 0.4rem;
+}
+
+.school-highlight p {
+    color: #dddddd;
+    line-height: 1.6;
+    font-size: 0.98rem;
+}
+
+.school-hero-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.hero-image-card {
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 18px;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.28);
+}
+
+.hero-image-card img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    display: block;
+}
+
+.hero-image-card span {
+    display: block;
+    padding: 0.85rem 1rem;
+    color: var(--text-light);
+    font-weight: 600;
+    font-size: 0.95rem;
+    background: linear-gradient(to top, rgba(17, 17, 17, 0.9), rgba(17, 17, 17, 0.5));
+}
+
 /* Intro Content */
 .intro-content {
     max-width: 900px;
@@ -1019,6 +1100,129 @@ body {
     line-height: 1.8;
     color: #555;
     margin-bottom: 1.5rem;
+}
+
+.school-gallery {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 1rem;
+    margin: 0 auto 3rem;
+}
+
+.school-gallery-item {
+    background: var(--card-bg);
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 10px 26px rgba(0, 0, 0, 0.12);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.school-gallery-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 14px 32px rgba(0, 0, 0, 0.16);
+}
+
+.school-gallery-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+.school-gallery-caption {
+    padding: 1rem;
+    color: var(--text-dark);
+    font-weight: 600;
+    text-align: center;
+    line-height: 1.4;
+}
+
+.schools-preview-section {
+    padding: 5rem 0;
+    background: linear-gradient(180deg, #FFF9E6 0%, #ffffff 100%);
+}
+
+.schools-preview-layout {
+    display: grid;
+    grid-template-columns: 1.6fr 0.9fr;
+    gap: 2rem;
+    align-items: stretch;
+}
+
+.schools-preview-activities {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.schools-preview-cta {
+    background: var(--dark-bg);
+    color: var(--text-light);
+    border-radius: 24px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    box-shadow: 0 16px 36px rgba(0, 0, 0, 0.15);
+}
+
+.schools-preview-cta h3 {
+    font-size: 1.8rem;
+    line-height: 1.2;
+}
+
+.schools-preview-cta p {
+    color: #e6e6e6;
+    line-height: 1.7;
+}
+
+.schools-preview-cta .btn {
+    align-self: flex-start;
+}
+
+.activity-section {
+    padding: 5rem 0;
+    background: linear-gradient(180deg, #fff 0%, #FFF9E6 100%);
+}
+
+.activity-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 1.5rem;
+}
+
+.activity-card {
+    background: var(--card-bg);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 26px rgba(0, 0, 0, 0.12);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.activity-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 16px 34px rgba(0, 0, 0, 0.15);
+}
+
+.activity-card img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    display: block;
+}
+
+.activity-card-body {
+    padding: 1.25rem;
+}
+
+.activity-card-body h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.75rem;
+    color: var(--text-dark);
+}
+
+.activity-card-body p {
+    color: #666;
+    line-height: 1.7;
 }
 
 /* What Section */
@@ -1439,6 +1643,85 @@ body {
     color: #cccccc;
 }
 
+.register-note {
+    max-width: 820px;
+    margin: 0 auto 2rem;
+    color: #f2f2f2;
+    text-align: center;
+    line-height: 1.8;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 16px;
+    padding: 1rem 1.25rem;
+}
+
+.register-layout {
+    display: grid;
+    grid-template-columns: 0.95fr 1.55fr;
+    gap: 2rem;
+    align-items: start;
+}
+
+.register-sidebar {
+    display: grid;
+    gap: 1rem;
+}
+
+.register-sidebar-panel {
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 20px;
+    padding: 1.5rem;
+    color: #f5f5f5;
+    backdrop-filter: blur(10px);
+}
+
+.register-sidebar-panel h3 {
+    font-size: 1.35rem;
+    margin: 0.35rem 0 1rem;
+}
+
+.sidebar-checklist {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar-checklist li {
+    padding: 0.65rem 0;
+    padding-left: 1.5rem;
+    position: relative;
+    color: #e6e6e6;
+    line-height: 1.6;
+}
+
+.sidebar-checklist li:before {
+    content: "▸";
+    position: absolute;
+    left: 0;
+    color: var(--secondary-yellow);
+    font-weight: bold;
+}
+
+.sidebar-image-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 0.75rem;
+}
+
+.sidebar-image-grid img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.register-sidebar-highlight p {
+    color: #e6e6e6;
+    line-height: 1.7;
+}
+
 .register-form-container {
     max-width: 900px;
     margin: 0 auto;
@@ -1569,6 +1852,23 @@ body {
     font-weight: 600;
 }
 
+.school-signup-note {
+    margin-top: 1rem;
+    color: #555;
+    font-size: 0.96rem;
+    line-height: 1.7;
+}
+
+.school-signup-note a {
+    color: var(--primary-red);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.school-signup-note a:hover {
+    text-decoration: underline;
+}
+
 /* Responsive Updates for Schools Page */
 @media (max-width: 1024px) {
     .how-grid {
@@ -1577,6 +1877,28 @@ body {
     
     .stats-grid {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .school-highlights,
+    .school-hero-gallery,
+    .school-gallery {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .activity-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .schools-preview-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .schools-preview-activities {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .register-layout {
+        grid-template-columns: 1fr;
     }
 }
 
@@ -1612,5 +1934,47 @@ body {
 
     .form-section {
         padding: 1.5rem 0;
+    }
+
+    .school-highlights,
+    .school-hero-gallery,
+    .school-gallery {
+        grid-template-columns: 1fr;
+    }
+
+    .activity-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .schools-preview-activities {
+        grid-template-columns: 1fr;
+    }
+
+    .schools-preview-cta {
+        padding: 1.5rem;
+    }
+
+    .hero-image-card img {
+        height: 210px;
+    }
+
+    .school-gallery-item img {
+        height: 220px;
+    }
+
+    .sidebar-image-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .sidebar-image-grid img {
+        height: 180px;
+    }
+
+    .register-form {
+        padding: 2rem;
+    }
+
+    .register-sidebar-panel {
+        padding: 1.25rem;
     }
 }
